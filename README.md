@@ -4,3 +4,4 @@ Atividades que senti um grau de dificuldade e refiz para melhorar a lógica de p
 ## Branchs:
 1. curso-em-video: atividades do curso do Guanabara
 2. main: atividades da faculdade
+3. proj-apartament: projeto que simula uma portaria
