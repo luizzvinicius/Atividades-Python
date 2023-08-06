@@ -1,13 +1,12 @@
 def fatorial(n):
     fat = 1
-    while n > 1:
-        fat *= n
-        n -= 1
+    for i in range(2, n+1):
+        fat *= i
     return fat
 
 
-a = fatorial(5)
-# print(a)
+a = fatorial(0)
+print(a)
 
 
 def fibonacci(n):
