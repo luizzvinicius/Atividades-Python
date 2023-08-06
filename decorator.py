@@ -39,23 +39,23 @@
 # print(salary)
 
 '''Exemplo 3'''
-import re
-def val_placa(f):
-    '''Valida se a placa do carro obedece o padrão normal ou mercosul'''
-    def valida():
-        while True:
-            p = f()
-            if re.match(r"^[A-Za-z]{3}\d{1}[A-Za-z0-9]{1}\d{2}$", p):
-                return p
-            print("Placa inválida.\n")
-    return valida
+# import re
+# def val_placa(f):
+#     '''Valida se a placa do carro obedece o padrão normal ou mercosul'''
+#     def valida():
+#         while True:
+#             p = f()
+#             if re.match(r"^[A-Za-z]{3}\d{1}[A-Za-z0-9]{1}\d{2}$", p):
+#                 return p
+#             print("Placa inválida.\n")
+#     return valida
 
 
-@val_placa
-def read_placa():
-    placa = input("Qual a placa do(a) veículo: ").strip().upper()
-    return placa
+# @val_placa
+# def read_placa():
+#     placa = input("Qual a placa do(a) veículo: ").strip().upper()
+#     return placa
 
 
-car = read_placa()
-print(car)
+# car = read_placa()
+# print(car)
