@@ -12,7 +12,7 @@ while True:
         break
 
     divided = 0
-    if num in (0,1):
+    if num in (0, 1):
         divided += 1
 
     for i in range(2, num):

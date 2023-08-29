@@ -22,8 +22,6 @@ while len(nomes) < 10:
     notas.append(nota)
     print()
 
-print(nomes)
-print(notas)
 while True:
     print("1. Informar o aluno que teve a maior nota, e o aluno com a menor nota.")
     print("2. Informar a média geral da turma.")
@@ -32,8 +30,8 @@ while True:
     if opt == 1:
         menor = notas[0]
         maior = notas[0]
-        nome_menor_aluno = nome[0]
-        nome_maior_aluno = nome[0]
+        nome_menor_aluno = nomes[0]
+        nome_maior_aluno = nomes[0]
         for nota, nome in zip(notas, nomes):
             if nota < menor:
                 menor = nota
@@ -52,9 +50,9 @@ while True:
 
         if media < 6:
             print("Situação ruim.")
-        elif media >= 6 and media <= 7:
+        elif media <= 7:
             print("Situação regular.")
-        elif media >= 7.1 and media < 8.9:
+        elif media < 8.9:
             print('Situação boa.')
         elif media >= 9:
             print("Situação exelente.")
