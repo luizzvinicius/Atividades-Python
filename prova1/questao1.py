@@ -16,7 +16,7 @@ for i in range(1, qtd_pessoas+1):
 
     imc = peso / (altura ** 2)
     imcs.append(imc)
-    
+
     # Não é necessário usar dois operadores lógicos
     if sexo == 'F':
         if imc < 19.1:
