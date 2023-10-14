@@ -1,2 +1,2 @@
-# Java Binary File
-*.class
+# Python cache File
+__pycache__
