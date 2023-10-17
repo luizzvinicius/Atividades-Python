@@ -30,11 +30,11 @@ def read_float(msg, exept_msg="Inválido"):
             print(exept_msg + "\n")
 
 
-def read_option(msg, max_opt, exept_msg="Opção inválida."):
+def read_option(msg, max_opt, min_opt = 0, exept_msg="Opção inválida."):
     '''Função que lê opções, dado o parâmetro max_opt, e a retorna.'''
     while True:
         opt = read_int(msg, "Digite números")
-        if 0 < opt <= max_opt:
+        if min_opt < opt <= max_opt:
             return opt
         print(f"\033[31m{exept_msg}\033[m\n")
 
